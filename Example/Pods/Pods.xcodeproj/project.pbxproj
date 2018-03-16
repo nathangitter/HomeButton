@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AF128F18B91DF394DA5871CDF1117FD /* Pods-HomeButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C05AF70C9CB83B3E7F6E6CA82E7EA05 /* Pods-HomeButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FCDC5D014A775241E6483569346A22F /* Pods-HomeButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09783FB6222A8AB8BC8856E35E943090 /* Pods-HomeButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1901D78500473B6D456EDEE05E49D3E5 /* Pods-HomeButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 675FAF84F3BADC6874DC40C3FA4F8F59 /* Pods-HomeButton_Example-dummy.m */; };
+		0AF128F18B91DF394DA5871CDF1117FD /* Pods-HomeButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A182D2E9A67AAD4E77C4686473DCBBAA /* Pods-HomeButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FCDC5D014A775241E6483569346A22F /* Pods-HomeButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 142FA56DF4742FE1BF2B41A927E079DD /* Pods-HomeButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1901D78500473B6D456EDEE05E49D3E5 /* Pods-HomeButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C39462B6A82ADDCAE342BC3FCAD65 /* Pods-HomeButton_Example-dummy.m */; };
 		383EB6B6C1482F7E3687C75FD125769D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		3FD54260F359AD559A7223E351FFEBFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		884FB9A3E82C13D808E7568F96F2F32D /* Pods-HomeButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADEA27CB04E35370042E04EB5A5A17C /* Pods-HomeButton_Tests-dummy.m */; };
-		AA0EA8B7DD6BB4FE8014437E5AA697BD /* HomeButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE92E1318715829638EE9AF6E71B69B2 /* HomeButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		884FB9A3E82C13D808E7568F96F2F32D /* Pods-HomeButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EF496F943D54A9F6A1969F489E3A57 /* Pods-HomeButton_Tests-dummy.m */; };
+		AA0EA8B7DD6BB4FE8014437E5AA697BD /* HomeButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE57B0193EEE676304D0C3FBAEE448A9 /* HomeButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BACB28D9891D33F8343468CEB6B2954D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A274F5EEC0480ADA0A17DA90C2E86C /* ReplaceMe.swift */; };
-		CEF22710DEE2A28855E85F6DD1D8B83C /* HomeButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD83E5583362755041B44D161E2A7F5C /* HomeButton-dummy.m */; };
+		CEF22710DEE2A28855E85F6DD1D8B83C /* HomeButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F765D2EDF540EC5EA947064FF972AED /* HomeButton-dummy.m */; };
 		D0079880F9DB960D34425DC25935CB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,41 +30,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09783FB6222A8AB8BC8856E35E943090 /* Pods-HomeButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		068360C03E30B43B4D80AD7F97386AD5 /* Pods-HomeButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		09EF496F943D54A9F6A1969F489E3A57 /* Pods-HomeButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeButton_Tests-dummy.m"; sourceTree = "<group>"; };
 		0A2C03091D70AC3647DF545AFC4F04F8 /* Pods_HomeButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HomeButton_Tests.framework; path = "Pods-HomeButton_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ADEA27CB04E35370042E04EB5A5A17C /* Pods-HomeButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeButton_Tests-dummy.m"; sourceTree = "<group>"; };
-		0C90C9E9DC513B7F9C7F367B2A10F28F /* Pods-HomeButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0F31315B1848FC81BB716B5ECEDFE954 /* Pods-HomeButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		136995A6B41219B8C9F3641D4F4DE386 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		222DB2EA3E190DB426608B6F6FAEC99B /* Pods-HomeButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Example-frameworks.sh"; sourceTree = "<group>"; };
-		2A2ECC5D629DB2CCE20B7687E809E7EF /* Pods-HomeButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0DAFD08434DF1C940EFFE003A8C2AF51 /* Pods-HomeButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		13E74E4F71473495207A1DD20891CCBA /* Pods-HomeButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		142FA56DF4742FE1BF2B41A927E079DD /* Pods-HomeButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1A1C49F51132519F7CBA9FD72F3D1B33 /* Pods-HomeButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		224B313A876D9DDBE7D2F626B7EC4B90 /* Pods-HomeButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HomeButton_Example.modulemap"; sourceTree = "<group>"; };
+		22D9002A277DFE6DAB0547BBD02EAE40 /* HomeButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HomeButton.xcconfig; sourceTree = "<group>"; };
+		23530CED8F441F03F2C8E7062192E4E7 /* Pods-HomeButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3D8969C5886DA7DE8CEEA522DEC6C834 /* Pods-HomeButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Tests-resources.sh"; sourceTree = "<group>"; };
 		4457D7CAD7FC7E8AB3B72B698EC28111 /* HomeButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HomeButton.framework; path = HomeButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		489B1C528873B97BE504D33EA056C330 /* Pods-HomeButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Tests-resources.sh"; sourceTree = "<group>"; };
-		4C05AF70C9CB83B3E7F6E6CA82E7EA05 /* Pods-HomeButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeButton_Example-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		675FAF84F3BADC6874DC40C3FA4F8F59 /* Pods-HomeButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeButton_Example-dummy.m"; sourceTree = "<group>"; };
-		6BCE0B500FA08BFD240DB7D6F17BE0BB /* Pods-HomeButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HomeButton_Example.modulemap"; sourceTree = "<group>"; };
+		6B6C39462B6A82ADDCAE342BC3FCAD65 /* Pods-HomeButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeButton_Example-dummy.m"; sourceTree = "<group>"; };
+		6F765D2EDF540EC5EA947064FF972AED /* HomeButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HomeButton-dummy.m"; sourceTree = "<group>"; };
 		6FC624B895605143043FA06D24B2805A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		78A274F5EEC0480ADA0A17DA90C2E86C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HomeButton/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		7B3FA0CA194333AFA130B13E04211E9B /* HomeButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HomeButton.xcconfig; sourceTree = "<group>"; };
-		80B537D797B38F8FB84CC0F0B18CCBF9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7927FDDAD11E1306948C03E401CDE670 /* HomeButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HomeButton-prefix.pch"; sourceTree = "<group>"; };
+		800A80CC40664372BDCF40D6C4F9A9D9 /* Pods-HomeButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HomeButton_Tests.modulemap"; sourceTree = "<group>"; };
+		81997C9C184478BE3619B1CAEA3C50F4 /* Pods-HomeButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		83C5ED80EEF4451B982AE030341A8E1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C59384BD0281AE1F021D53697508C50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95C776441C1CA7AB8AB4A2D801545976 /* HomeButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HomeButton.modulemap; sourceTree = "<group>"; };
 		977C086AC30999FC5240779DFFEB5FA5 /* Pods_HomeButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HomeButton_Example.framework; path = "Pods-HomeButton_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4084571BBEDD7EA1D41ADD766C0ABC2 /* HomeButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HomeButton.modulemap; sourceTree = "<group>"; };
-		AC3A9BEE92AAE69CB19A70CEC10A873C /* Pods-HomeButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		AE0A03D5B76BA2004169393D41BFA4B7 /* Pods-HomeButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B05A62724E6B86B1D199DB5AA143F326 /* Pods-HomeButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HomeButton_Tests.modulemap"; sourceTree = "<group>"; };
-		BAB7C53846949E7E48E6F8F1DF019D41 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD83E5583362755041B44D161E2A7F5C /* HomeButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HomeButton-dummy.m"; sourceTree = "<group>"; };
-		C8444F1A35719011C7812D7863A3CB10 /* Pods-HomeButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C89C61A29FE10C3813C6E4A4A89C85A4 /* Pods-HomeButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Example-resources.sh"; sourceTree = "<group>"; };
-		CDD8EB4BF6641049F66C3C684B51D1B1 /* Pods-HomeButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A182D2E9A67AAD4E77C4686473DCBBAA /* Pods-HomeButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		C31AE696BA4FC610CF331AD7CC1F79ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D145646C931D8D08F419EE7273F63B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE57B0193EEE676304D0C3FBAEE448A9 /* HomeButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HomeButton-umbrella.h"; sourceTree = "<group>"; };
 		D315EF4C5DF4CFD1288B75B0179DBF98 /* HomeButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HomeButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D562DF05949B9EEC576D7027F1DB751D /* Pods-HomeButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F367CB2A0D10CBCA60D56DE9F4F1238E /* HomeButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HomeButton-prefix.pch"; sourceTree = "<group>"; };
-		F41840AB96DD9A2F01FB4E743CCAEAE2 /* Pods-HomeButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FE92E1318715829638EE9AF6E71B69B2 /* HomeButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HomeButton-umbrella.h"; sourceTree = "<group>"; };
+		D34C337E41E46DBDC31A0D891EEAA747 /* Pods-HomeButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E067E2E0D21676C72DBB9B29BB96C433 /* Pods-HomeButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E2318490223E200B016AF4AE785868E4 /* Pods-HomeButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2DBA18669C45B26B2E877DABFB86582 /* Pods-HomeButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F69F26CE94DCD8ADAD739C1030ECD590 /* Pods-HomeButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Example-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,36 +95,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0245FFF1B105895B2D12132811CA1716 /* Support Files */ = {
+		310272695DD91C1F006F1EAAE7639B29 /* Pods-HomeButton_Example */ = {
 			isa = PBXGroup;
 			children = (
-				A4084571BBEDD7EA1D41ADD766C0ABC2 /* HomeButton.modulemap */,
-				7B3FA0CA194333AFA130B13E04211E9B /* HomeButton.xcconfig */,
-				BD83E5583362755041B44D161E2A7F5C /* HomeButton-dummy.m */,
-				F367CB2A0D10CBCA60D56DE9F4F1238E /* HomeButton-prefix.pch */,
-				FE92E1318715829638EE9AF6E71B69B2 /* HomeButton-umbrella.h */,
-				136995A6B41219B8C9F3641D4F4DE386 /* Info.plist */,
+				83C5ED80EEF4451B982AE030341A8E1E /* Info.plist */,
+				224B313A876D9DDBE7D2F626B7EC4B90 /* Pods-HomeButton_Example.modulemap */,
+				E2318490223E200B016AF4AE785868E4 /* Pods-HomeButton_Example-acknowledgements.markdown */,
+				13E74E4F71473495207A1DD20891CCBA /* Pods-HomeButton_Example-acknowledgements.plist */,
+				6B6C39462B6A82ADDCAE342BC3FCAD65 /* Pods-HomeButton_Example-dummy.m */,
+				E067E2E0D21676C72DBB9B29BB96C433 /* Pods-HomeButton_Example-frameworks.sh */,
+				F69F26CE94DCD8ADAD739C1030ECD590 /* Pods-HomeButton_Example-resources.sh */,
+				A182D2E9A67AAD4E77C4686473DCBBAA /* Pods-HomeButton_Example-umbrella.h */,
+				D34C337E41E46DBDC31A0D891EEAA747 /* Pods-HomeButton_Example.debug.xcconfig */,
+				0DAFD08434DF1C940EFFE003A8C2AF51 /* Pods-HomeButton_Example.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HomeButton";
-			sourceTree = "<group>";
-		};
-		42B337271E5CAD19C9A7444DCFFB6880 /* Pods-HomeButton_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				80B537D797B38F8FB84CC0F0B18CCBF9 /* Info.plist */,
-				B05A62724E6B86B1D199DB5AA143F326 /* Pods-HomeButton_Tests.modulemap */,
-				D562DF05949B9EEC576D7027F1DB751D /* Pods-HomeButton_Tests-acknowledgements.markdown */,
-				0F31315B1848FC81BB716B5ECEDFE954 /* Pods-HomeButton_Tests-acknowledgements.plist */,
-				0ADEA27CB04E35370042E04EB5A5A17C /* Pods-HomeButton_Tests-dummy.m */,
-				AC3A9BEE92AAE69CB19A70CEC10A873C /* Pods-HomeButton_Tests-frameworks.sh */,
-				489B1C528873B97BE504D33EA056C330 /* Pods-HomeButton_Tests-resources.sh */,
-				09783FB6222A8AB8BC8856E35E943090 /* Pods-HomeButton_Tests-umbrella.h */,
-				AE0A03D5B76BA2004169393D41BFA4B7 /* Pods-HomeButton_Tests.debug.xcconfig */,
-				0C90C9E9DC513B7F9C7F367B2A10F28F /* Pods-HomeButton_Tests.release.xcconfig */,
-			);
-			name = "Pods-HomeButton_Tests";
-			path = "Target Support Files/Pods-HomeButton_Tests";
+			name = "Pods-HomeButton_Example";
+			path = "Target Support Files/Pods-HomeButton_Example";
 			sourceTree = "<group>";
 		};
 		4380733270F932EF05E2C414C7C68421 /* HomeButton */ = {
@@ -132,10 +118,28 @@
 			children = (
 				78A274F5EEC0480ADA0A17DA90C2E86C /* ReplaceMe.swift */,
 				A04A108F0D235D498FBD8FDB5A0AE9DD /* Pod */,
-				0245FFF1B105895B2D12132811CA1716 /* Support Files */,
+				84CA1C532C7FE3207F74D7DD753BC6B1 /* Support Files */,
 			);
 			name = HomeButton;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		490926612D1BDB1616FEA6C53126215C /* Pods-HomeButton_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C3D145646C931D8D08F419EE7273F63B /* Info.plist */,
+				800A80CC40664372BDCF40D6C4F9A9D9 /* Pods-HomeButton_Tests.modulemap */,
+				E2DBA18669C45B26B2E877DABFB86582 /* Pods-HomeButton_Tests-acknowledgements.markdown */,
+				1A1C49F51132519F7CBA9FD72F3D1B33 /* Pods-HomeButton_Tests-acknowledgements.plist */,
+				09EF496F943D54A9F6A1969F489E3A57 /* Pods-HomeButton_Tests-dummy.m */,
+				068360C03E30B43B4D80AD7F97386AD5 /* Pods-HomeButton_Tests-frameworks.sh */,
+				3D8969C5886DA7DE8CEEA522DEC6C834 /* Pods-HomeButton_Tests-resources.sh */,
+				142FA56DF4742FE1BF2B41A927E079DD /* Pods-HomeButton_Tests-umbrella.h */,
+				81997C9C184478BE3619B1CAEA3C50F4 /* Pods-HomeButton_Tests.debug.xcconfig */,
+				23530CED8F441F03F2C8E7062192E4E7 /* Pods-HomeButton_Tests.release.xcconfig */,
+			);
+			name = "Pods-HomeButton_Tests";
+			path = "Target Support Files/Pods-HomeButton_Tests";
 			sourceTree = "<group>";
 		};
 		7048095439CBF7FFFF2F310115AC23B1 /* Development Pods */ = {
@@ -155,6 +159,20 @@
 				C803E08EC51F7369BE8012098C848FED /* Products */,
 				C4D914DD560ED06F245115F52B1BD9EE /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		84CA1C532C7FE3207F74D7DD753BC6B1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				95C776441C1CA7AB8AB4A2D801545976 /* HomeButton.modulemap */,
+				22D9002A277DFE6DAB0547BBD02EAE40 /* HomeButton.xcconfig */,
+				6F765D2EDF540EC5EA947064FF972AED /* HomeButton-dummy.m */,
+				7927FDDAD11E1306948C03E401CDE670 /* HomeButton-prefix.pch */,
+				CE57B0193EEE676304D0C3FBAEE448A9 /* HomeButton-umbrella.h */,
+				C31AE696BA4FC610CF331AD7CC1F79ED /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HomeButton";
 			sourceTree = "<group>";
 		};
 		A04A108F0D235D498FBD8FDB5A0AE9DD /* Pod */ = {
@@ -178,8 +196,8 @@
 		C4D914DD560ED06F245115F52B1BD9EE /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D17DE2D53585FF013D8EB9E8206F8EDD /* Pods-HomeButton_Example */,
-				42B337271E5CAD19C9A7444DCFFB6880 /* Pods-HomeButton_Tests */,
+				310272695DD91C1F006F1EAAE7639B29 /* Pods-HomeButton_Example */,
+				490926612D1BDB1616FEA6C53126215C /* Pods-HomeButton_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -192,24 +210,6 @@
 				0A2C03091D70AC3647DF545AFC4F04F8 /* Pods_HomeButton_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D17DE2D53585FF013D8EB9E8206F8EDD /* Pods-HomeButton_Example */ = {
-			isa = PBXGroup;
-			children = (
-				BAB7C53846949E7E48E6F8F1DF019D41 /* Info.plist */,
-				6BCE0B500FA08BFD240DB7D6F17BE0BB /* Pods-HomeButton_Example.modulemap */,
-				F41840AB96DD9A2F01FB4E743CCAEAE2 /* Pods-HomeButton_Example-acknowledgements.markdown */,
-				2A2ECC5D629DB2CCE20B7687E809E7EF /* Pods-HomeButton_Example-acknowledgements.plist */,
-				675FAF84F3BADC6874DC40C3FA4F8F59 /* Pods-HomeButton_Example-dummy.m */,
-				222DB2EA3E190DB426608B6F6FAEC99B /* Pods-HomeButton_Example-frameworks.sh */,
-				C89C61A29FE10C3813C6E4A4A89C85A4 /* Pods-HomeButton_Example-resources.sh */,
-				4C05AF70C9CB83B3E7F6E6CA82E7EA05 /* Pods-HomeButton_Example-umbrella.h */,
-				CDD8EB4BF6641049F66C3C684B51D1B1 /* Pods-HomeButton_Example.debug.xcconfig */,
-				C8444F1A35719011C7812D7863A3CB10 /* Pods-HomeButton_Example.release.xcconfig */,
-			);
-			name = "Pods-HomeButton_Example";
-			path = "Target Support Files/Pods-HomeButton_Example";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -308,8 +308,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -368,43 +368,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		17E18AB1C2A479D2DC0E9295EABC6786 /* Release */ = {
+		0299D157F73D3577ABDA3A1A490EC993 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8444F1A35719011C7812D7863A3CB10 /* Pods-HomeButton_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HomeButton_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HomeButton_Example/Pods-HomeButton_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HomeButton_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		45FCA59495A45818A28BFC20CD653679 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C90C9E9DC513B7F9C7F367B2A10F28F /* Pods-HomeButton_Tests.release.xcconfig */;
+			baseConfigurationReference = 23530CED8F441F03F2C8E7062192E4E7 /* Pods-HomeButton_Tests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -417,7 +383,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-HomeButton_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HomeButton_Tests/Pods-HomeButton_Tests.modulemap";
@@ -435,7 +401,7 @@
 			};
 			name = Release;
 		};
-		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -445,12 +411,10 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -458,7 +422,61 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -487,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,9 +516,43 @@
 			};
 			name = Debug;
 		};
+		5CDD074CE8D4CAB28E8A82C8A5740045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DAFD08434DF1C940EFFE003A8C2AF51 /* Pods-HomeButton_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HomeButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HomeButton_Example/Pods-HomeButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HomeButton_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5FD237E0BAAB7C95EE5AD6E60317E206 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B3FA0CA194333AFA130B13E04211E9B /* HomeButton.xcconfig */;
+			baseConfigurationReference = 22D9002A277DFE6DAB0547BBD02EAE40 /* HomeButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -529,9 +581,43 @@
 			};
 			name = Debug;
 		};
+		62B1996F6659B2B825854AC2BD70827C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D34C337E41E46DBDC31A0D891EEAA747 /* Pods-HomeButton_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HomeButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HomeButton_Example/Pods-HomeButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HomeButton_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		6AF33619EB32FBF7F404B7D2382299A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B3FA0CA194333AFA130B13E04211E9B /* HomeButton.xcconfig */;
+			baseConfigurationReference = 22D9002A277DFE6DAB0547BBD02EAE40 /* HomeButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -561,67 +647,9 @@
 			};
 			name = Release;
 		};
-		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+		ACEFE9B8359CE0A4E35C4180B25701E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B41AD3735B0E019A0C69D0A83F03B1CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE0A03D5B76BA2004169393D41BFA4B7 /* Pods-HomeButton_Tests.debug.xcconfig */;
+			baseConfigurationReference = 81997C9C184478BE3619B1CAEA3C50F4 /* Pods-HomeButton_Tests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -634,7 +662,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-HomeButton_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HomeButton_Tests/Pods-HomeButton_Tests.modulemap";
@@ -651,48 +679,14 @@
 			};
 			name = Debug;
 		};
-		D9FDA18C63E00BEBA60E4D765AA15DE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDD8EB4BF6641049F66C3C684B51D1B1 /* Pods-HomeButton_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HomeButton_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HomeButton_Example/Pods-HomeButton_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_HomeButton_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		0AA7E0DD517DC37FBD83F7C33611E95C /* Build configuration list for PBXNativeTarget "Pods-HomeButton_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B41AD3735B0E019A0C69D0A83F03B1CE /* Debug */,
-				45FCA59495A45818A28BFC20CD653679 /* Release */,
+				ACEFE9B8359CE0A4E35C4180B25701E1 /* Debug */,
+				0299D157F73D3577ABDA3A1A490EC993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -700,8 +694,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
-				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -718,8 +712,8 @@
 		FFD9B0BCE28A7363BF508BC3F59BD269 /* Build configuration list for PBXNativeTarget "Pods-HomeButton_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9FDA18C63E00BEBA60E4D765AA15DE2 /* Debug */,
-				17E18AB1C2A479D2DC0E9295EABC6786 /* Release */,
+				62B1996F6659B2B825854AC2BD70827C /* Debug */,
+				5CDD074CE8D4CAB28E8A82C8A5740045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
