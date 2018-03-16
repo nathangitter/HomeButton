@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		2920D9F43D4F6F2F44900D33 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		33C84A6B4B73D45F621160DA /* Pods_HomeButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		34F80F371F919031E6D9EBF6 /* HomeButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HomeButton.podspec; path = ../HomeButton.podspec; sourceTree = "<group>"; };
+		34F80F371F919031E6D9EBF6 /* HomeButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HomeButton.podspec; path = ../HomeButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		51C9D4385E47848D6C651E96 /* Pods-HomeButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeButton_Example/Pods-HomeButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5EAAF57312E7ACED7FFACCCF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HomeButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +80,7 @@
 				F4EBF1D7923A44B056291552 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
@@ -521,6 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PW5ET5HNB2;
 				INFOPLIST_FILE = HomeButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nathangitter.HomeButton-Example";
@@ -537,6 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PW5ET5HNB2;
 				INFOPLIST_FILE = HomeButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nathangitter.HomeButton-Example";

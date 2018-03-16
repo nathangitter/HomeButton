@@ -7,10 +7,8 @@
 //
 
 import UIKit
-import HomeButton
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var homeButton: HomeButton!
     
 }
