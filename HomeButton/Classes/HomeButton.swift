@@ -1,6 +1,21 @@
 
 import UIKit
 
+// Hack to add home button at boot without any modification to AppDelegate code
+extension UIApplication {
+
+    static var addedButton: Bool = false
+    override open var next: UIResponder? {
+        // Called before applicationDidFinishLaunching
+        if !UIApplication.addedButton {
+            UIApplication.addedButton = true
+            HomeButton.add(to: self)
+        }
+        return super.next
+    }
+
+}
+
 public struct HomeButton {
     static let BarHeight: CGFloat = 80
 
