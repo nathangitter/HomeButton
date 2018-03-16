@@ -9,7 +9,6 @@ public enum HomeButtonStyle {
     case modernWhite
 }
 
-@IBDesignable
 public class HomeButtonView: UIControl {
     
     /// The style of home button.
@@ -55,11 +54,6 @@ public class HomeButtonView: UIControl {
     public override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = bounds.width / 2
-    }
-    
-    public override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        backgroundColor = .black
     }
     
     @objc private func touchUpInsideAction() {
