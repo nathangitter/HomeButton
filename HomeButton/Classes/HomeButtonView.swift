@@ -63,7 +63,14 @@ public class HomeButtonView: UIControl {
     }
     
     @objc private func touchUpInsideAction() {
-        exit(0)
+        // -[UIApplication suspend] gracefully closes app.
+        // If selector is available, use that. Otherwise, call exit()
+        let suspendSelector = NSSelectorFromString("suspend")
+        if UIApplication.shared.responds(to: suspendSelector) {
+            UIApplication.shared.perform(suspendSelector)
+        } else {
+            exit(EXIT_SUCCESS)
+        }
     }
     
     private func updateStyle() {
