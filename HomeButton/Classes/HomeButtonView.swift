@@ -18,19 +18,21 @@ public class HomeButtonView: UIControl {
         }
     }
     
-    private lazy var iconPath: UIBezierPath = {
-        let iconWidth = size.width * 0.75
-        return UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: iconWidth, height: iconWidth), cornerRadius: iconWidth * 0.2)
-    }()
+    private var iconPath: UIBezierPath {
+        let iconWidth = size.width * 0.4
+        let pathOffset = (bounds.width - iconWidth) / 2
+        return UIBezierPath(roundedRect: CGRect(x: pathOffset, y: pathOffset, width: iconWidth, height: iconWidth), cornerRadius: iconWidth * 0.2)
+    }
     
     private lazy var iconShapeLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.path = iconPath.cgPath
-        layer.borderWidth = 2
+        layer.strokeColor = UIColor(white: 0.5, alpha: 1).cgColor
+        layer.lineWidth = 2
         return layer
     }()
     
-    private let size = CGSize(width: 50, height: 50) // 10.9mm?
+    private let size = CGSize(width: 62, height: 62)
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,6 +45,7 @@ public class HomeButtonView: UIControl {
     }
     
     private func sharedInit() {
+        layer.addSublayer(iconShapeLayer)
         addTarget(self, action: #selector(touchUpInsideAction), for: .touchUpInside)
         updateStyle()
     }
@@ -54,6 +57,8 @@ public class HomeButtonView: UIControl {
     public override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = bounds.width / 2
+        iconShapeLayer.frame = bounds
+        iconShapeLayer.path = iconPath.cgPath
     }
     
     @objc private func touchUpInsideAction() {

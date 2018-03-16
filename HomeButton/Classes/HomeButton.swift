@@ -17,7 +17,7 @@ extension UIApplication {
 }
 
 public struct HomeButton {
-    static let BarHeight: CGFloat = 80
+    static let barHeight: CGFloat = 90
 
     static var buttonWindow: UIWindow?
 
@@ -25,7 +25,7 @@ public struct HomeButton {
         // Get first window
         guard let window = application.keyWindow ?? application.windows.first else { fatalError("No windows found in application.") }
 
-        let frame = CGRect(x: 0, y: window.bounds.height - BarHeight, width: window.bounds.width, height: BarHeight)
+        let frame = CGRect(x: 0, y: window.bounds.height - barHeight, width: window.bounds.width, height: barHeight)
         let buttonWindow = UIWindow(frame: frame)
         buttonWindow.windowLevel = UIWindowLevelStatusBar
         buttonWindow.isHidden = false
