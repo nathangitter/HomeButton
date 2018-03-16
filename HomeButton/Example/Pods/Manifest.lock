@@ -1,0 +1,16 @@
+PODS:
+  - HomeButton (0.1.0)
+
+DEPENDENCIES:
+  - HomeButton (from `../`)
+
+EXTERNAL SOURCES:
+  HomeButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HomeButton: 701ff8fdc148c149c4e74826dd3e18acbba33959
+
+PODFILE CHECKSUM: c8fdc59dd180e8d3ce10262187055a7117ae636b
+
+COCOAPODS: 1.4.0

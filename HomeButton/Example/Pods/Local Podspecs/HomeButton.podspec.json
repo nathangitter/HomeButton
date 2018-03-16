@@ -1,0 +1,22 @@
+{
+  "name": "HomeButton",
+  "version": "0.1.0",
+  "summary": "A short description of HomeButton.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nathangitter/HomeButton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nathangitter": "nathan@nathangitter.com"
+  },
+  "source": {
+    "git": "https://github.com/nathangitter/HomeButton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HomeButton/Classes/**/*"
+}

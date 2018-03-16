@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HomeButton_Example' do
+  pod 'HomeButton', :path => '../'
+
+  target 'HomeButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

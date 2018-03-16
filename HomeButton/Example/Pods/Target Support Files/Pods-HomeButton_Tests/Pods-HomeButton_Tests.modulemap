@@ -1,0 +1,6 @@
+framework module Pods_HomeButton_Tests {
+  umbrella header "Pods-HomeButton_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

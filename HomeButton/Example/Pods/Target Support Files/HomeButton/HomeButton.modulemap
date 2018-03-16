@@ -1,0 +1,6 @@
+framework module HomeButton {
+  umbrella header "HomeButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
