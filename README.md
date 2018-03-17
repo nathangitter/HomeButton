@@ -31,9 +31,7 @@ The default style is `classic`. To change the style, add the following line:
     
 This can be placed anywhere in your app, but it probably makes the most sense in your AppDelegate's `application(_:didFinishLaunchingWithOptions:)` function.
 
-## Installation
-
-### CocoaPods
+## Installation via CocoaPods
 
 HomeButton is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -42,15 +40,15 @@ it, simply add the following line to your Podfile:
 pod 'HomeButton'
 ```
 
-### Manually
-
-Drag the files in `HomeButton/Classes` into your project.
-
 ## Frequently Asked Questions
 
 > Will this cause my app to be rejected from the App Store?
 
 It explicity breaks guideline 5.2.1 due to usage of private API's and probably 5.2.5 as well for mimicking system UI. So honestly it depends on the mood of the reviewer.
+
+> Is this a joke?
+
+Because satire is sometimes lost over the internet—yes, this is a joke. It was created as a fun April Fool's project. However, we think it's actually a decent re-creation of the home button, and is valuable as a UI/UX experiment.
 
 ## Authors
 
