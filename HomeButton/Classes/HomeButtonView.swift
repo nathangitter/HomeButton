@@ -10,6 +10,9 @@ public enum HomeButtonStyle {
 }
 
 public class HomeButtonView: UIControl {
+
+    /// Haptic feedback generator
+    let feedbackGenerator = UISelectionFeedbackGenerator()
     
     /// The style of home button.
     public var style: HomeButtonStyle = .modern {
@@ -53,6 +56,7 @@ public class HomeButtonView: UIControl {
     
     private func sharedInit() {
         layer.addSublayer(iconShapeLayer)
+        addTarget(self, action: #selector(touchDownAction), for: .touchDown)
         addTarget(self, action: #selector(touchUpInsideAction), for: .touchUpInside)
         updateStyle()
     }
@@ -67,8 +71,14 @@ public class HomeButtonView: UIControl {
         iconShapeLayer.frame = bounds
         iconShapeLayer.path = iconPath.cgPath
     }
+
+    @objc private func touchDownAction() {
+        feedbackGenerator.selectionChanged()
+    }
     
     @objc private func touchUpInsideAction() {
+        feedbackGenerator.selectionChanged()
+
         // -[UIApplication suspend] gracefully closes app.
         // If selector is available, use that. Otherwise, call exit()
         let suspendSelector = NSSelectorFromString("suspend")
