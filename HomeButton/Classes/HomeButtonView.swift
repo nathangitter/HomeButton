@@ -153,9 +153,12 @@ public class HomeButtonView: UIControl {
     private var releaseSoundID: SystemSoundID = 1
     
     private func createSystemSounds() {
-        guard let bundle = Bundle(identifier: "org.cocoapods.HomeButton") else { return }
-        guard let pressSoundUrl = bundle.url(forResource: "press", withExtension: "wav") else { print("nope"); return }
-        guard let releaseSoundUrl = bundle.url(forResource: "release", withExtension: "wav") else { return }
+        guard
+            let bundleURL = Bundle.init(for: HomeButtonView.self).url(forResource: "HomeButton", withExtension: "bundle"),
+            let bundle = Bundle.init(url: bundleURL),
+            let pressSoundUrl = bundle.url(forResource: "press", withExtension: "wav"),
+            let releaseSoundUrl = bundle.url(forResource: "release", withExtension: "wav")
+        else { print("Audio not found"); return }
         AudioServicesCreateSystemSoundID(pressSoundUrl as CFURL, &pressSoundID)
         AudioServicesCreateSystemSoundID(releaseSoundUrl as CFURL, &releaseSoundID)
     }

@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "HomeButton/Classes/**/*"
+  "source_files": "HomeButton/Classes/**/*",
+  "resource_bundles": {
+    "HomeButton": [
+      "HomeButton/Assets/**/*.wav"
+    ]
+  }
 }

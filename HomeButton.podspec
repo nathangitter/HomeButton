@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'HomeButton/Classes/**/*'
   
   s.resource_bundles = {
-    'HomeButton' => ['HomeButton/press.wav', 'HomeButton/release.wav']
+    'HomeButton' => ['HomeButton/Assets/**/*.wav']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
