@@ -8,7 +8,7 @@ public class HomeButtonView: UIControl {
     // MARK: - Public API
     
     /// The style of home button.
-    public var style: HomeButtonStyle = .modern {
+    public var style: HomeButtonStyle = .classic {
         didSet {
             updateStyle()
         }
