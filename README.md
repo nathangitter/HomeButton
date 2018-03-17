@@ -2,8 +2,6 @@
 <img src="Resources/homebutton.png" alt="Home Button Title Graphic">
 </p>
 
-# HomeButton
-
 [![CI Status](http://img.shields.io/travis/nathangitter/HomeButton.svg?style=flat)](https://travis-ci.org/nathangitter/HomeButton)
 [![Version](https://img.shields.io/cocoapods/v/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
 [![License](https://img.shields.io/cocoapods/l/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
@@ -11,17 +9,17 @@
 
 When Apple released the iPhone X, they removed iPhone's most iconic feature—the home button.
 
-HomeButton is a CocoaPod that brings back the home button. Best part: **it actually works**.
+`HomeButton` is a CocoaPod that brings back the home button. Best part: **it actually works**.
 
 (gif here)
 
 ## Usage
 
-HomeButton can be added to your poject with zero lines of code. Yes, that's right—no code needed. Simply link the framework in your app, and the home button adds itself.
+`HomeButton` can be added to your poject with zero lines of code. Yes, that's right—no code needed. Simply link the framework in your app, and the home button adds itself.
 
 ## Customization
 
-HomeButton supports four styles: `classic`, `classicWhite`, `modern`, and `modernWhite`.
+`HomeButton` supports four styles: `classic`, `classicWhite`, `modern`, and `modernWhite`.
 
 (image of four styles here)
 
@@ -33,7 +31,7 @@ This can be placed anywhere in your app, but it probably makes the most sense in
 
 ## Installation via CocoaPods
 
-HomeButton is available through [CocoaPods](http://cocoapods.org). To install
+`HomeButton` is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
