@@ -7,16 +7,8 @@
 //
 
 import UIKit
-import HomeButton
 
 class ViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        HomeButton.style = .classic
-        
-    }
 
     override func prefersHomeIndicatorAutoHidden() -> Bool {
         return true
