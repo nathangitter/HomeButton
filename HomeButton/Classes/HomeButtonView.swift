@@ -1,6 +1,7 @@
 // todo header comment here
 
 import UIKit
+import AudioToolbox
 
 public class HomeButtonView: UIControl {
     
@@ -42,6 +43,7 @@ public class HomeButtonView: UIControl {
     }
     
     private func sharedInit() {
+        createSystemSounds()
         layer.addSublayer(iconShapeLayer)
         updateStyle()
     }
@@ -108,12 +110,14 @@ public class HomeButtonView: UIControl {
             if touch.force > activationForce {
                 shouldActivateOnRelease = true
                 impactFeedbackGenerator.impactOccurred()
+                playPressSound()
             }
         } else {
             // button is pressed in
             if touch.force < releaseForce {
-                feedbackGenerator.selectionChanged()
                 shouldActivateOnRelease = false
+                feedbackGenerator.selectionChanged()
+                playReleaseSound()
                 activate()
             }
         }
@@ -141,6 +145,27 @@ public class HomeButtonView: UIControl {
         layer.borderColor = style.isWhite ? UIColor(white: 0.75, alpha: 1).cgColor : UIColor(white: 0.15, alpha: 1).cgColor
         layer.borderWidth = 2
         
+    }
+    
+    // MARK: - Sound Effects
+    
+    private var pressSoundID: SystemSoundID = 0
+    private var releaseSoundID: SystemSoundID = 1
+    
+    private func createSystemSounds() {
+        guard let bundle = Bundle(identifier: "org.cocoapods.HomeButton") else { return }
+        guard let pressSoundUrl = bundle.url(forResource: "press", withExtension: "wav") else { print("nope"); return }
+        guard let releaseSoundUrl = bundle.url(forResource: "release", withExtension: "wav") else { return }
+        AudioServicesCreateSystemSoundID(pressSoundUrl as CFURL, &pressSoundID)
+        AudioServicesCreateSystemSoundID(releaseSoundUrl as CFURL, &releaseSoundID)
+    }
+    
+    private func playPressSound() {
+        AudioServicesPlaySystemSound(pressSoundID)
+    }
+    
+    private func playReleaseSound() {
+        AudioServicesPlaySystemSound(releaseSoundID)
     }
     
 }

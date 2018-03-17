@@ -32,9 +32,9 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'HomeButton/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'HomeButton' => ['HomeButton/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'HomeButton' => ['HomeButton/press.wav', 'HomeButton/release.wav']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

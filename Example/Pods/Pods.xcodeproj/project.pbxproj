@@ -62,6 +62,8 @@
 		CCE78AB297D910B6FA00FFE1799E180A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D34C337E41E46DBDC31A0D891EEAA747 /* Pods-HomeButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D816680D205D869200A3C44C /* HomeButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeButtonStyle.swift; path = HomeButton/Classes/HomeButtonStyle.swift; sourceTree = "<group>"; };
+		D8166811205D9F0200A3C44C /* press.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = press.wav; path = HomeButton/Assets/press.wav; sourceTree = "<group>"; };
+		D8166812205D9F0200A3C44C /* release.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = release.wav; path = HomeButton/Assets/release.wav; sourceTree = "<group>"; };
 		DE849B49D581C290ADA10791C7CCD519 /* HomeButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HomeButton.xcconfig; sourceTree = "<group>"; };
 		E067E2E0D21676C72DBB9B29BB96C433 /* Pods-HomeButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E2318490223E200B016AF4AE785868E4 /* Pods-HomeButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -219,6 +221,8 @@
 				3CEEA43876693C8AD62665489357EF41 /* HomeButton.swift */,
 				61C7B30EF5CA938559ED5EC3CE6A6AB2 /* HomeButtonView.swift */,
 				D816680D205D869200A3C44C /* HomeButtonStyle.swift */,
+				D8166811205D9F0200A3C44C /* press.wav */,
+				D8166812205D9F0200A3C44C /* release.wav */,
 				F98765F7E190EF3DB87C4C6557D1D4AE /* Pod */,
 				4F8A0806876AE454E196B832976F9F8A /* Support Files */,
 			);
