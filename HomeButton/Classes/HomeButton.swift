@@ -17,10 +17,13 @@ extension UIApplication {
 }
 
 public struct HomeButton {
+    
     static let barHeight: CGFloat = 90
 
     static var buttonWindow: UIWindow?
 
+    /// Adds the home button to the application.
+    /// This function is called automatically by linking the framework.
     public static func add(to application: UIApplication) {
         // Get status bar to determine if running in a "modern" style. Do nothing otherwise.
         let statusBarSelector = NSSelectorFromString("statusBar")
@@ -41,21 +44,29 @@ public struct HomeButton {
         buttonWindow.rootViewController = HomeButtonBarViewController()
         HomeButton.buttonWindow = buttonWindow
     }
+    
+    public static var style: HomeButtonStyle = .modern {
+        didSet {
+            guard let homeButtonBarViewController = buttonWindow?.rootViewController as? HomeButtonBarViewController else { return }
+            homeButtonBarViewController.homeButton.style = style
+            homeButtonBarViewController.containerView.backgroundColor = style.isWhite ? .white : .black
+        }
+    }
 
     private class HomeButtonBarViewController: UIViewController {
+        
+        public let homeButton = HomeButtonView()
+        public let containerView = UIView()
 
         override func loadView() {
-            let container = UIView()
-            container.backgroundColor = .black
-
-            let button = HomeButtonView()
-            button.translatesAutoresizingMaskIntoConstraints = false
-            container.addSubview(button)
+            containerView.backgroundColor = .black
+            homeButton.translatesAutoresizingMaskIntoConstraints = false
+            containerView.addSubview(homeButton)
             NSLayoutConstraint.activate([
-                button.centerXAnchor.constraint(equalTo: container.centerXAnchor),
-                button.centerYAnchor.constraint(equalTo: container.centerYAnchor)
+                homeButton.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+                homeButton.centerYAnchor.constraint(equalTo: containerView.centerYAnchor)
             ])
-            self.view = container
+            self.view = containerView
         }
     }
 }

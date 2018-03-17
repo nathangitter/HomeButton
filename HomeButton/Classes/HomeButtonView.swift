@@ -2,13 +2,6 @@
 
 import UIKit
 
-public enum HomeButtonStyle {
-    case classic
-    case classicWhite
-    case modern
-    case modernWhite
-}
-
 public class HomeButtonView: UIControl {
     
     // MARK: - Public API
@@ -31,7 +24,6 @@ public class HomeButtonView: UIControl {
     private lazy var iconShapeLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.path = iconPath.cgPath
-        layer.strokeColor = UIColor(white: 0.5, alpha: 1).cgColor
         layer.lineWidth = 2
         layer.fillColor = nil
         return layer
@@ -142,19 +134,11 @@ public class HomeButtonView: UIControl {
     
     private func updateStyle() {
         
-        switch style {
-        case .classic:
-            ()
-        case .classicWhite:
-            ()
-        case .modern:
-            ()
-        case .modernWhite:
-            ()
-        }
+        iconShapeLayer.isHidden = !style.isClassic
+        iconShapeLayer.strokeColor = style.isWhite ? UIColor(white: 0.85, alpha: 1).cgColor : UIColor(white: 0.5, alpha: 1).cgColor
         
-        backgroundColor = isHighlighted ? .init(white: 0.08, alpha: 1) : .init(white: 0.1, alpha: 1)
-        layer.borderColor = UIColor.init(white: 0.15, alpha: 1).cgColor
+        backgroundColor = style.isWhite ? .white : .init(white: 0.1, alpha: 1)
+        layer.borderColor = style.isWhite ? UIColor(white: 0.75, alpha: 1).cgColor : UIColor(white: 0.15, alpha: 1).cgColor
         layer.borderWidth = 2
         
     }
