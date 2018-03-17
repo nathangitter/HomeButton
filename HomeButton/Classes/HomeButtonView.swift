@@ -10,9 +10,8 @@ public enum HomeButtonStyle {
 }
 
 public class HomeButtonView: UIControl {
-
-    /// Haptic feedback generator
-    let feedbackGenerator = UISelectionFeedbackGenerator()
+    
+    // MARK: - Public API
     
     /// The style of home button.
     public var style: HomeButtonStyle = .modern {
@@ -20,6 +19,8 @@ public class HomeButtonView: UIControl {
             updateStyle()
         }
     }
+    
+    // MARK: - UI Elements
     
     private var iconPath: UIBezierPath {
         let iconWidth = size.width * 0.35
@@ -36,13 +37,7 @@ public class HomeButtonView: UIControl {
         return layer
     }()
     
-    private let size = CGSize(width: 62, height: 62)
-
-    public override var isHighlighted: Bool {
-        didSet {
-            updateStyle()
-        }
-    }
+    /// MARK: - Initialization
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -56,10 +51,12 @@ public class HomeButtonView: UIControl {
     
     private func sharedInit() {
         layer.addSublayer(iconShapeLayer)
-        addTarget(self, action: #selector(touchDownAction), for: .touchDown)
-        addTarget(self, action: #selector(touchUpInsideAction), for: .touchUpInside)
         updateStyle()
     }
+    
+    // MARK: - Sizing and Layout
+    
+    private let size = CGSize(width: 62, height: 62)
     
     public override var intrinsicContentSize: CGSize {
         return size
@@ -71,14 +68,66 @@ public class HomeButtonView: UIControl {
         iconShapeLayer.frame = bounds
         iconShapeLayer.path = iconPath.cgPath
     }
-
-    @objc private func touchDownAction() {
-        feedbackGenerator.selectionChanged()
+    
+    // MARK: - Touch Actions
+    
+    public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        guard let touch = touches.first else { return }
+        handleTouch(touch: touch)
     }
     
-    @objc private func touchUpInsideAction() {
-        feedbackGenerator.selectionChanged()
-
+    public override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
+        guard let touch = touches.first else { return }
+        handleTouch(touch: touch)
+    }
+    
+    public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        guard let touch = touches.first else { return }
+        handleTouch(touch: touch)
+    }
+    
+    public override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesCancelled(touches, with: event)
+        shouldActivateOnRelease = false
+    }
+    
+    /// The amount of 3D Touch pressure required to press the button.
+    private let activationForce: CGFloat = 4.5
+    
+    /// The amount of 3D Touch pressure required to activate the button after it is pressed.
+    /// This value should be slightly smaller than the `activationForce` to simulate a physical button.
+    private let releaseForce: CGFloat = 3.5
+    
+    /// `true` when the button is pressed, and should activate when the pressure is lessened.
+    private var shouldActivateOnRelease = false
+    
+    /// Haptic for button press.
+    private let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
+    
+    /// Haptic for button release.
+    private let feedbackGenerator = UISelectionFeedbackGenerator()
+    
+    private func handleTouch(touch: UITouch) {
+        if !shouldActivateOnRelease {
+            // button has yet to be pressed
+            if touch.force > activationForce {
+                shouldActivateOnRelease = true
+                impactFeedbackGenerator.impactOccurred()
+            }
+        } else {
+            // button is pressed in
+            if touch.force < releaseForce {
+                feedbackGenerator.selectionChanged()
+                shouldActivateOnRelease = false
+                activate()
+            }
+        }
+    }
+    
+    private func activate() {
         // -[UIApplication suspend] gracefully closes app.
         // If selector is available, use that. Otherwise, call exit()
         let suspendSelector = NSSelectorFromString("suspend")
@@ -88,6 +137,8 @@ public class HomeButtonView: UIControl {
             exit(EXIT_SUCCESS)
         }
     }
+    
+    // MARK: - Styling
     
     private func updateStyle() {
         
