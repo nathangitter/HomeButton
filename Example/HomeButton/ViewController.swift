@@ -10,5 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    override func prefersHomeIndicatorAutoHidden() -> Bool {
+        return true
+    }
 }

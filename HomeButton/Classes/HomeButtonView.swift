@@ -19,7 +19,7 @@ public class HomeButtonView: UIControl {
     }
     
     private var iconPath: UIBezierPath {
-        let iconWidth = size.width * 0.4
+        let iconWidth = size.width * 0.35
         let pathOffset = (bounds.width - iconWidth) / 2
         return UIBezierPath(roundedRect: CGRect(x: pathOffset, y: pathOffset, width: iconWidth, height: iconWidth), cornerRadius: iconWidth * 0.2)
     }
@@ -29,10 +29,17 @@ public class HomeButtonView: UIControl {
         layer.path = iconPath.cgPath
         layer.strokeColor = UIColor(white: 0.5, alpha: 1).cgColor
         layer.lineWidth = 2
+        layer.fillColor = nil
         return layer
     }()
     
     private let size = CGSize(width: 62, height: 62)
+
+    public override var isHighlighted: Bool {
+        didSet {
+            updateStyle()
+        }
+    }
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -85,7 +92,9 @@ public class HomeButtonView: UIControl {
             ()
         }
         
-        backgroundColor = .black
+        backgroundColor = isHighlighted ? .init(white: 0.08, alpha: 1) : .init(white: 0.1, alpha: 1)
+        layer.borderColor = UIColor.init(white: 0.15, alpha: 1).cgColor
+        layer.borderWidth = 2
         
     }
     

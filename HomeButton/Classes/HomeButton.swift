@@ -46,7 +46,7 @@ public struct HomeButton {
 
         override func loadView() {
             let container = UIView()
-            container.backgroundColor = .darkGray
+            container.backgroundColor = .black
 
             let button = HomeButtonView()
             button.translatesAutoresizingMaskIntoConstraints = false
