@@ -56,7 +56,10 @@ public class HomeButtonView: UIControl {
     
     private func sharedInit() {
         layer.addSublayer(iconShapeLayer)
-        addTarget(self, action: #selector(touchDownAction), for: .touchDown)
+
+        // Haptics on touch events
+        addTarget(feedbackGenerator, action: #selector(UISelectionFeedbackGenerator.selectionChanged), for: [.touchDown, .touchDragExit, .touchUpInside, .touchDragEnter])
+        
         addTarget(self, action: #selector(touchUpInsideAction), for: .touchUpInside)
         updateStyle()
     }
@@ -72,13 +75,7 @@ public class HomeButtonView: UIControl {
         iconShapeLayer.path = iconPath.cgPath
     }
 
-    @objc private func touchDownAction() {
-        feedbackGenerator.selectionChanged()
-    }
-    
     @objc private func touchUpInsideAction() {
-        feedbackGenerator.selectionChanged()
-
         // -[UIApplication suspend] gracefully closes app.
         // If selector is available, use that. Otherwise, call exit()
         let suspendSelector = NSSelectorFromString("suspend")
