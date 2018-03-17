@@ -1,4 +1,6 @@
-## Fancy graphic here
+<p align="center">
+<img src="Resources/homebutton.png" alt="Home Button Title Graphic">
+</p>
 
 # HomeButton
 
