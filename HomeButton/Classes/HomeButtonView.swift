@@ -114,7 +114,7 @@ public class HomeButtonView: UIControl {
             }
         } else {
             // button is pressed in
-            if touch.force < releaseForce {
+            if touch.force < releaseForce || touch.phase == .ended {
                 shouldActivateOnRelease = false
                 feedbackGenerator.selectionChanged()
                 playReleaseSound()
