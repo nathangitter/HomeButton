@@ -1,3 +1,5 @@
+## Fancy graphic here
+
 # HomeButton
 
 [![CI Status](http://img.shields.io/travis/nathangitter/HomeButton.svg?style=flat)](https://travis-ci.org/nathangitter/HomeButton)
@@ -5,13 +7,13 @@
 [![License](https://img.shields.io/cocoapods/l/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
 [![Platform](https://img.shields.io/cocoapods/p/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
 
-## Example
+## Screenshots here
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+## Usage
 
 ## Installation
+
+### CocoaPods
 
 HomeButton is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -20,10 +22,14 @@ it, simply add the following line to your Podfile:
 pod 'HomeButton'
 ```
 
-## Author
+### Manually
 
-nathangitter, nathan@nathangitter.com
+Drag the files in `HomeButton/Classes` into your project.
+
+## Authors
+
+[Nathan Gitter](https://twitter.com/nathangitter) and [Ian McDowell](https://twitter.com/ian_mcdowell)
 
 ## License
 
-HomeButton is available under the MIT license. See the LICENSE file for more info.
+MIT. See the LICENSE file for more info.
