@@ -6,8 +6,18 @@
 [![Version](https://img.shields.io/cocoapods/v/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
 [![License](https://img.shields.io/cocoapods/l/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
 [![Platform](https://img.shields.io/cocoapods/p/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
+![iOS Version](http://img.shields.io/badge/iOS-11-4A90E2.svg)
+![Xcode Version](http://img.shields.io/badge/Xcode-9-4A90E2.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/badges/HomeButton.svg)
-![Rating](https://img.shields.io/badge/rating-5.0/5.0-green.svg)
+![Code Coverage](https://img.shields.io/badge/coverage-100%-green.svg)
+![Code Quality](https://img.shields.io/badge/code%20quality-high-orange.svg)
+![Swift 4.1](http://img.shields.io/badge/swift-4.1-orange.svg)
+![Haptics](https://img.shields.io/badge/haptics-yes-green.svg)
+![Sounds](https://img.shields.io/badge/sounds-yes-green.svg)
+![Dependencies](https://img.shields.io/badge/dependencies-none-brightgreen.svg)
+![App Store Ready](https://img.shields.io/badge/app%20review-fail-red.svg)
+![Rating](https://img.shields.io/badge/rating-5.0/5.0-blue.svg)
+![Star this repo](https://img.shields.io/badge/please%20star-this%20repo-yellow.svg)
 
 When Apple released the iPhone X, they removed iPhone's most iconic feature—the home button.
 
