@@ -35,6 +35,11 @@ public class HomeButtonView: UIControl {
         return layer
     }()
     
+    private lazy var modernBorderImageView: UIImageView = {
+        let imageView = UIImageView()
+        return imageView
+    }()
+    
     /// MARK: - Initialization
     
     public override init(frame: CGRect) {
@@ -50,6 +55,7 @@ public class HomeButtonView: UIControl {
     private func sharedInit() {
         createSystemSounds()
         layer.addSublayer(iconShapeLayer)
+        addSubview(modernBorderImageView)
         updateStyle()
     }
     
@@ -66,6 +72,7 @@ public class HomeButtonView: UIControl {
         layer.cornerRadius = bounds.width / 2
         iconShapeLayer.frame = bounds
         iconShapeLayer.path = iconPath.cgPath
+        modernBorderImageView.frame = bounds
     }
     
     // MARK: - Touch Actions
@@ -148,9 +155,20 @@ public class HomeButtonView: UIControl {
         iconShapeLayer.isHidden = !style.isClassic
         iconShapeLayer.strokeColor = style.isWhite ? UIColor(white: 0.85, alpha: 1).cgColor : UIColor(white: 0.5, alpha: 1).cgColor
         
-        backgroundColor = style.isWhite ? .white : UIColor(white: 0.1, alpha: 1)
+        backgroundColor = style.isWhite ? HomeButtonStyle.offWhite : UIColor(white: 0.1, alpha: 1)
         layer.borderColor = style.isWhite ? UIColor(white: 0.75, alpha: 1).cgColor : UIColor(white: 0.15, alpha: 1).cgColor
-        layer.borderWidth = 2
+        layer.borderWidth = style.isClassic ? 2 : 0
+        
+        guard
+            let bundleURL = Bundle(for: HomeButtonView.self).url(forResource: "HomeButton", withExtension: "bundle"),
+            let bundle = Bundle(url: bundleURL),
+            let whiteImagePath = bundle.path(forResource: "modern_white", ofType: "png"),
+            let whiteImage = UIImage(contentsOfFile: whiteImagePath),
+            let blackImagePath = bundle.path(forResource: "modern_black", ofType: "png"),
+            let blackImage = UIImage(contentsOfFile: blackImagePath)
+        else { print("Image assets not found"); return }
+        modernBorderImageView.image = style.isWhite ? whiteImage : blackImage
+        modernBorderImageView.isHidden = style.isClassic
         
     }
     
@@ -161,8 +179,8 @@ public class HomeButtonView: UIControl {
     
     private func createSystemSounds() {
         guard
-            let bundleURL = Bundle.init(for: HomeButtonView.self).url(forResource: "HomeButton", withExtension: "bundle"),
-            let bundle = Bundle.init(url: bundleURL),
+            let bundleURL = Bundle(for: HomeButtonView.self).url(forResource: "HomeButton", withExtension: "bundle"),
+            let bundle = Bundle(url: bundleURL),
             let pressSoundUrl = bundle.url(forResource: "press", withExtension: "wav"),
             let releaseSoundUrl = bundle.url(forResource: "release", withExtension: "wav")
         else { print("Audio not found"); return }

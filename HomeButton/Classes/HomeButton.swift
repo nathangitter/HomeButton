@@ -53,7 +53,7 @@ public struct HomeButton {
         didSet {
             guard let homeButtonBarViewController = buttonWindow?.rootViewController as? HomeButtonBarViewController else { return }
             homeButtonBarViewController.homeButton.style = style
-            homeButtonBarViewController.containerView.backgroundColor = style.isWhite ? .white : .black
+            homeButtonBarViewController.containerView.backgroundColor = style.isWhite ? HomeButtonStyle.offWhite : .black
         }
     }
 

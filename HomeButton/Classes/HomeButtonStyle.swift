@@ -23,3 +23,10 @@ extension HomeButtonStyle {
     }
     
 }
+
+extension HomeButtonStyle {
+    
+    /// The color of the white iPhone.
+    internal static let offWhite = UIColor(red: 249 / 255, green: 251 / 255, blue: 252 / 255, alpha: 1)
+    
+}

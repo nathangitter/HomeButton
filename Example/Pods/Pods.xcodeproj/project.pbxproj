@@ -21,6 +21,8 @@
 		A7FADCEC55C1F01CDC4B0BB0CB83F3FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D0079880F9DB960D34425DC25935CB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D4BFC0F4E4D50CE2FB2BBCE034C712C5 /* HomeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9E898AB11AD8A7E271278E4D535B475E /* HomeButton.bundle */; };
+		D890C05E20701F5000E853F5 /* modern_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D890C05C20701F5000E853F5 /* modern_white.png */; };
+		D890C05F20701F5000E853F5 /* modern_black.png in Resources */ = {isa = PBXBuildFile; fileRef = D890C05D20701F5000E853F5 /* modern_black.png */; };
 		E033083A2A9B6159BA155631FE539ADC /* HomeButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B669EE4142EEB6B8A1D230A8C5BACF3 /* HomeButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -42,47 +44,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		055FF4D309BE73D9DFA7C07CF03EA9B1 /* Pods_HomeButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HomeButton_Tests.framework; path = "Pods-HomeButton_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		055FF4D309BE73D9DFA7C07CF03EA9B1 /* Pods_HomeButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		068360C03E30B43B4D80AD7F97386AD5 /* Pods-HomeButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		080322AB245B41362B6F160C60D492D1 /* HomeButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HomeButton.xcconfig; sourceTree = "<group>"; };
 		09EF496F943D54A9F6A1969F489E3A57 /* Pods-HomeButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeButton_Tests-dummy.m"; sourceTree = "<group>"; };
-		0B29371B2817C2212A2352FAFBF74136 /* release.wav */ = {isa = PBXFileReference; includeInIndex = 1; name = release.wav; path = HomeButton/Assets/release.wav; sourceTree = "<group>"; };
+		0B29371B2817C2212A2352FAFBF74136 /* release.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = release.wav; path = HomeButton/Assets/release.wav; sourceTree = "<group>"; };
 		0DAFD08434DF1C940EFFE003A8C2AF51 /* Pods-HomeButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		13E74E4F71473495207A1DD20891CCBA /* Pods-HomeButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		142FA56DF4742FE1BF2B41A927E079DD /* Pods-HomeButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeButton_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1A1C49F51132519F7CBA9FD72F3D1B33 /* Pods-HomeButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HomeButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1B669EE4142EEB6B8A1D230A8C5BACF3 /* HomeButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HomeButton-umbrella.h"; sourceTree = "<group>"; };
-		224B313A876D9DDBE7D2F626B7EC4B90 /* Pods-HomeButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HomeButton_Example.modulemap"; sourceTree = "<group>"; };
+		224B313A876D9DDBE7D2F626B7EC4B90 /* Pods-HomeButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HomeButton_Example.modulemap"; sourceTree = "<group>"; };
 		23530CED8F441F03F2C8E7062192E4E7 /* Pods-HomeButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		29C9ECFF4DD22F6769EFE986828DC5CE /* HomeButtonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeButtonView.swift; path = HomeButton/Classes/HomeButtonView.swift; sourceTree = "<group>"; };
 		2F20B42A74EB07A310023EF3D8506CA0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36151D3F0494F464EAC340A03EFCAAAD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		36151D3F0494F464EAC340A03EFCAAAD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3D8969C5886DA7DE8CEEA522DEC6C834 /* Pods-HomeButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Tests-resources.sh"; sourceTree = "<group>"; };
 		4B5C077CF6E30365EB52B8F68F7C3F67 /* HomeButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HomeButton-prefix.pch"; sourceTree = "<group>"; };
 		5411B5CDF1EE44DAE20893D9CBBC4C04 /* ResourceBundle-HomeButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HomeButton-Info.plist"; sourceTree = "<group>"; };
 		5AF7F335D63B8383E146FEF10CC874C9 /* HomeButtonStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeButtonStyle.swift; path = HomeButton/Classes/HomeButtonStyle.swift; sourceTree = "<group>"; };
-		60E269CEB2437CFD618DD5CAC2127445 /* press.wav */ = {isa = PBXFileReference; includeInIndex = 1; name = press.wav; path = HomeButton/Assets/press.wav; sourceTree = "<group>"; };
+		60E269CEB2437CFD618DD5CAC2127445 /* press.wav */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.wav; name = press.wav; path = HomeButton/Assets/press.wav; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6B6C39462B6A82ADDCAE342BC3FCAD65 /* Pods-HomeButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HomeButton_Example-dummy.m"; sourceTree = "<group>"; };
-		800A80CC40664372BDCF40D6C4F9A9D9 /* Pods-HomeButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HomeButton_Tests.modulemap"; sourceTree = "<group>"; };
+		800A80CC40664372BDCF40D6C4F9A9D9 /* Pods-HomeButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HomeButton_Tests.modulemap"; sourceTree = "<group>"; };
 		81997C9C184478BE3619B1CAEA3C50F4 /* Pods-HomeButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		835DB5125323805D8C3775F2B2C97203 /* HomeButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HomeButton.framework; path = HomeButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		835DB5125323805D8C3775F2B2C97203 /* HomeButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C5ED80EEF4451B982AE030341A8E1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A5DE3F323989C8F3B083F5903E88E29 /* HomeButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HomeButton-dummy.m"; sourceTree = "<group>"; };
-		8E3A2F8F6D147BCEFAC95106A3885392 /* HomeButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HomeButton.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E898AB11AD8A7E271278E4D535B475E /* HomeButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HomeButton.bundle; path = "HomeButton-HomeButton.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3A2F8F6D147BCEFAC95106A3885392 /* HomeButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HomeButton.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E898AB11AD8A7E271278E4D535B475E /* HomeButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A182D2E9A67AAD4E77C4686473DCBBAA /* Pods-HomeButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HomeButton_Example-umbrella.h"; sourceTree = "<group>"; };
 		C0D7C2F8291C7FDD47BDAFB6400CF3B9 /* HomeButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeButton.swift; path = HomeButton/Classes/HomeButton.swift; sourceTree = "<group>"; };
 		C3D145646C931D8D08F419EE7273F63B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6510B302BD3179E091868576E49459E /* HomeButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HomeButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C6510B302BD3179E091868576E49459E /* HomeButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HomeButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D34C337E41E46DBDC31A0D891EEAA747 /* Pods-HomeButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DE64915E71D2D31817CD1EE6DF1C8590 /* Pods_HomeButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HomeButton_Example.framework; path = "Pods-HomeButton_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D890C05C20701F5000E853F5 /* modern_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modern_white.png; sourceTree = "<group>"; };
+		D890C05D20701F5000E853F5 /* modern_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modern_black.png; sourceTree = "<group>"; };
+		DE64915E71D2D31817CD1EE6DF1C8590 /* Pods_HomeButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E067E2E0D21676C72DBB9B29BB96C433 /* Pods-HomeButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E2318490223E200B016AF4AE785868E4 /* Pods-HomeButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E2DBA18669C45B26B2E877DABFB86582 /* Pods-HomeButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F69F26CE94DCD8ADAD739C1030ECD590 /* Pods-HomeButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Example-resources.sh"; sourceTree = "<group>"; };
-		FA68709FC1B264687C5A714ABCD0C259 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FA68709FC1B264687C5A714ABCD0C259 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +257,8 @@
 		FEE2CA64106AE2799C9CD967BEFD3238 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D890C05D20701F5000E853F5 /* modern_black.png */,
+				D890C05C20701F5000E853F5 /* modern_white.png */,
 				60E269CEB2437CFD618DD5CAC2127445 /* press.wav */,
 				0B29371B2817C2212A2352FAFBF74136 /* release.wav */,
 			);
@@ -402,7 +408,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D890C05F20701F5000E853F5 /* modern_black.png in Resources */,
 				724885DD6BB8CDEE7573C8AC16BE3F55 /* press.wav in Resources */,
+				D890C05E20701F5000E853F5 /* modern_white.png in Resources */,
 				460E716B55B1966BE00F741543E84B29 /* release.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
