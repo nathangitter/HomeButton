@@ -21,8 +21,8 @@
 		A7FADCEC55C1F01CDC4B0BB0CB83F3FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D0079880F9DB960D34425DC25935CB08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D4BFC0F4E4D50CE2FB2BBCE034C712C5 /* HomeButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9E898AB11AD8A7E271278E4D535B475E /* HomeButton.bundle */; };
-		D890C05E20701F5000E853F5 /* modern_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D890C05C20701F5000E853F5 /* modern_white.png */; };
-		D890C05F20701F5000E853F5 /* modern_black.png in Resources */ = {isa = PBXBuildFile; fileRef = D890C05D20701F5000E853F5 /* modern_black.png */; };
+		D890C06220702DE200E853F5 /* modern_white.png in Resources */ = {isa = PBXBuildFile; fileRef = D890C06020702DE200E853F5 /* modern_white.png */; };
+		D890C06320702DE200E853F5 /* modern_black.png in Resources */ = {isa = PBXBuildFile; fileRef = D890C06120702DE200E853F5 /* modern_black.png */; };
 		E033083A2A9B6159BA155631FE539ADC /* HomeButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B669EE4142EEB6B8A1D230A8C5BACF3 /* HomeButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -79,8 +79,8 @@
 		C3D145646C931D8D08F419EE7273F63B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6510B302BD3179E091868576E49459E /* HomeButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HomeButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D34C337E41E46DBDC31A0D891EEAA747 /* Pods-HomeButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HomeButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D890C05C20701F5000E853F5 /* modern_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modern_white.png; sourceTree = "<group>"; };
-		D890C05D20701F5000E853F5 /* modern_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modern_black.png; sourceTree = "<group>"; };
+		D890C06020702DE200E853F5 /* modern_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = modern_white.png; path = HomeButton/Assets/modern_white.png; sourceTree = "<group>"; };
+		D890C06120702DE200E853F5 /* modern_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = modern_black.png; path = HomeButton/Assets/modern_black.png; sourceTree = "<group>"; };
 		DE64915E71D2D31817CD1EE6DF1C8590 /* Pods_HomeButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E067E2E0D21676C72DBB9B29BB96C433 /* Pods-HomeButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HomeButton_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E2318490223E200B016AF4AE785868E4 /* Pods-HomeButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HomeButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -257,8 +257,8 @@
 		FEE2CA64106AE2799C9CD967BEFD3238 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D890C05D20701F5000E853F5 /* modern_black.png */,
-				D890C05C20701F5000E853F5 /* modern_white.png */,
+				D890C06120702DE200E853F5 /* modern_black.png */,
+				D890C06020702DE200E853F5 /* modern_white.png */,
 				60E269CEB2437CFD618DD5CAC2127445 /* press.wav */,
 				0B29371B2817C2212A2352FAFBF74136 /* release.wav */,
 			);
@@ -408,10 +408,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D890C05F20701F5000E853F5 /* modern_black.png in Resources */,
 				724885DD6BB8CDEE7573C8AC16BE3F55 /* press.wav in Resources */,
-				D890C05E20701F5000E853F5 /* modern_white.png in Resources */,
 				460E716B55B1966BE00F741543E84B29 /* release.wav in Resources */,
+				D890C06320702DE200E853F5 /* modern_black.png in Resources */,
+				D890C06220702DE200E853F5 /* modern_white.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
