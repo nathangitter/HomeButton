@@ -21,7 +21,9 @@ When Apple released the iPhone X, they removed iPhone's most iconic feature—th
 
 `HomeButton` supports four styles: `classic`, `classicWhite`, `modern`, and `modernWhite`.
 
-(image of four styles here)
+<p align="center">
+<img src="Resources/styles.png" alt="Home Button Style Options">
+</p>
 
 The default style is `classic`. To change the style, add the following line:
 
