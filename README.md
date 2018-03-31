@@ -25,8 +25,8 @@
 ![App Store Ready](https://img.shields.io/badge/app%20review-fail-red.svg)
 ![Rating](https://img.shields.io/badge/rating-5.0/5.0-blue.svg)
 ![Released](https://img.shields.io/badge/released-April%201,%202018-C5C5C5.svg)
-![Badges](https://img.shields.io/badge/badges-25-white.svg)
-![Star this repo](https://img.shields.io/badge/please%20star-this%20repo-F8E71C.svg)
+![Badges](https://img.shields.io/badge/badges-25-FFFFF.svg)
+![Star this repo](https://img.shields.io/badge/please%20star-this%20repo-FAE249.svg)
 
 When Apple released the iPhone X, they removed iPhone's most iconic feature—the home button.
 
