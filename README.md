@@ -11,7 +11,7 @@ When Apple released the iPhone X, they removed iPhone's most iconic feature—th
 
 `HomeButton` is a CocoaPod that brings back the home button. Best part: **it actually works**.
 
-(gif here)
+<img src="Resources/demo.gif" alt="A Demo of the Working Home Button">
 
 ## Usage
 
