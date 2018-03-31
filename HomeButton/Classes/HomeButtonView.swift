@@ -150,6 +150,8 @@ public class HomeButtonView: UIControl {
     
     // MARK: - Styling
     
+    private let motionEffect = ShineMotionEffect()
+    
     private func updateStyle() {
         
         iconShapeLayer.isHidden = !style.isClassic
@@ -169,6 +171,13 @@ public class HomeButtonView: UIControl {
         else { print("Image assets not found"); return }
         modernBorderImageView.image = style.isWhite ? whiteImage : blackImage
         modernBorderImageView.isHidden = style.isClassic
+        
+        // motion effect for modern style only
+        if style.isClassic {
+            removeMotionEffect(motionEffect)
+        } else {
+            addMotionEffect(motionEffect)
+        }
         
     }
     
@@ -194,6 +203,15 @@ public class HomeButtonView: UIControl {
     
     private func playReleaseSound() {
         AudioServicesPlaySystemSound(releaseSoundID)
+    }
+    
+}
+
+private class ShineMotionEffect: UIMotionEffect {
+    
+    override func keyPathsAndRelativeValues(forViewerOffset viewerOffset: UIOffset) -> [String : Any]? {
+        let rotation = (viewerOffset.horizontal + viewerOffset.vertical) * 0.5
+        return ["transform.rotation.z": rotation]
     }
     
 }
