@@ -6,6 +6,8 @@
 [![Version](https://img.shields.io/cocoapods/v/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
 [![License](https://img.shields.io/cocoapods/l/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
 [![Platform](https://img.shields.io/cocoapods/p/HomeButton.svg?style=flat)](http://cocoapods.org/pods/HomeButton)
+![GitHub top language](https://img.shields.io/github/languages/top/badges/HomeButton.svg)
+![Rating](https://img.shields.io/badge/rating-5.0/5.0-green.svg)
 
 When Apple released the iPhone X, they removed iPhone's most iconic feature—the home button.
 
