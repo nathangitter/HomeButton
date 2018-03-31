@@ -1,4 +1,7 @@
-// todo header comment here
+//
+// HomeButton
+// Created by Nathan Gitter and Ian McDowell
+//
 
 import UIKit
 import AudioToolbox
@@ -16,12 +19,14 @@ public class HomeButtonView: UIControl {
     
     // MARK: - UI Elements
     
+    /// The squircle path that resembles an app icon. Only appears for classic styles.
     private var iconPath: UIBezierPath {
         let iconWidth = size.width * 0.35
         let pathOffset = (bounds.width - iconWidth) / 2
         return UIBezierPath(roundedRect: CGRect(x: pathOffset, y: pathOffset, width: iconWidth, height: iconWidth), cornerRadius: iconWidth * 0.2)
     }
     
+    /// The shape layer to draw the icon path.
     private lazy var iconShapeLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.path = iconPath.cgPath
@@ -114,7 +119,9 @@ public class HomeButtonView: UIControl {
             }
         } else {
             // button is pressed in
+            backgroundColor = style.isWhite ? UIColor(white: 0.9, alpha: 1) : UIColor(white: 0, alpha: 1)
             if touch.force < releaseForce || touch.phase == .ended {
+                backgroundColor = style.isWhite ? .white : UIColor(white: 0.1, alpha: 1)
                 shouldActivateOnRelease = false
                 feedbackGenerator.selectionChanged()
                 playReleaseSound()
@@ -141,7 +148,7 @@ public class HomeButtonView: UIControl {
         iconShapeLayer.isHidden = !style.isClassic
         iconShapeLayer.strokeColor = style.isWhite ? UIColor(white: 0.85, alpha: 1).cgColor : UIColor(white: 0.5, alpha: 1).cgColor
         
-        backgroundColor = style.isWhite ? .white : .init(white: 0.1, alpha: 1)
+        backgroundColor = style.isWhite ? .white : UIColor(white: 0.1, alpha: 1)
         layer.borderColor = style.isWhite ? UIColor(white: 0.75, alpha: 1).cgColor : UIColor(white: 0.15, alpha: 1).cgColor
         layer.borderWidth = 2
         

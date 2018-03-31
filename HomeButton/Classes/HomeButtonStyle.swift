@@ -1,3 +1,7 @@
+//
+// HomeButton
+// Created by Nathan Gitter and Ian McDowell
+//
 
 import Foundation
 
