@@ -34,7 +34,7 @@ Add a working home button to your app for iPhone X users.
   s.source_files = 'HomeButton/Classes/**/*'
   
   s.resource_bundles = {
-    'HomeButton' => ['HomeButton/Assets/**/*.wav']
+    'HomeButton' => ['HomeButton/Assets/**/*.wav','HomeButton/Assets/**/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
